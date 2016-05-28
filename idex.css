@@ -30,8 +30,24 @@ div.button
 	transition: all 1s linear .1s;
 	background-color: rgba(100, 100, 100, .8);
 	background: -webkit-linear-gradient(right, rgba(255, 255, 50, .9) 0%, rgba(220, 220, 200, .9) 100%);
+	background: -moz-linear-gradient(right, rgba(255, 255, 50, .9) 0%, rgba(220, 220, 200, .9) 100%);
+	background: -ms-linear-gradient(right, rgba(255, 255, 50, .9) 0%, rgba(220, 220, 200, .9) 100%);
+	background: linear-gradient(right, rgba(255, 255, 50, .9) 0%, rgba(220, 220, 200, .9) 100%);
+}
+.button:hover div 
+{
+	display: block;
+	
 
 }
+.droplink{display: none; transition: all 2s;
+     margin-top:0px; 
+     padding-left:10%;
+	 text-align: left;
+
+  
+}
+
 
 .hellp
 {
@@ -68,6 +84,7 @@ margin-left: 3%;
 }
 
 h1{
+	clear: both;
 text-align: center;
 }
 .img2
@@ -89,6 +106,7 @@ text-align: center;
 	margin: 0 auto; 
 	margin-bottom: 2vh;
 
+
 }
 
 #targpic
@@ -99,6 +117,8 @@ text-align: center;
 	background-image: url('http://panukraine.ua/catalog/city/bukovel/bukovel_4.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
+	-ms-transition: all 2s linear .1s;
+	-moz-transition: all 2s linear .1s;
 	transition: all 2s linear .1s;
 }
 
@@ -158,6 +178,8 @@ background-size:  auto 100%;
 height: 100%;
 width: 100%;
 transition: all 3s linear .2s;
+-ms-transition: all 3s linear .2s;
+
 
 }
 #mapp{
@@ -167,11 +189,12 @@ transition: all 3s linear .2s;
 #mapp iframe
 {
 	display: block;
-	width: 40%;
+	width: 48%;
 	transition: all 1s linear .2s;
+	-ms-transition: all 1s linear .2s;
 	
 }
-#mapp iframe:hover
+#mapp iframe:hover, #mapp:hover iframe
 {
 	width: 100%;
 }
@@ -179,7 +202,7 @@ transition: all 3s linear .2s;
 
 .p-map:hover
 {
-	transform: rotateX(360deg);
+	transform: rotateX(180deg);
 
 }
 
@@ -218,6 +241,7 @@ nav a
 	border-radius: 5px;
 	background-color: rgba(100, 100, 100, .8);
 	background: -webkit-linear-gradient(right, rgba(100, 100, 100, .8) 0%, rgba(255, 255, 255, .8) 100%);
+	background: -moz-linear-gradient(right, rgba(100, 100, 100, .8) 0%, rgba(255, 255, 255, .8) 100%);
 	text-transform: uppercase;
 
 }
